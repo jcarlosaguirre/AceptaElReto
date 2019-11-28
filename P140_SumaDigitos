@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class P140_SumaDeDigitos {
+public class P140_SumaDigitos {
 
 	public static void main(String[] args) {
 
