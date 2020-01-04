@@ -11,11 +11,13 @@ public class P102_Encriptacion {
 
 		do {
 
+			// Incluyo la siguiente linea caracter a caracter en el Vector
 			coded = sc.nextLine().toCharArray();
 			count = 0;
 			vocal = 0;
 			s = "";
 
+			// Hasta que el codigo de la primera letra coincida con el codigo de "p", suma o resta
 			while (coded[0] != 112) {
 
 				if (coded[0] > 112) {
@@ -33,8 +35,11 @@ public class P102_Encriptacion {
 
 			for (int i = 1; i < coded.length; i++) {
 
+				// Cojo el valor de cada letra de la frase y le aplico suma o resta
+				// dependiendo de su valor inicial
 				lett = coded[i];
 				
+				// En estos if identificamos MAYUSCULAS y minusculas
 				if (lett > 64 && lett < 91) {
 
 					coded[i] += count;
@@ -51,6 +56,7 @@ public class P102_Encriptacion {
 					else if (coded[i] > 122) coded[i] = (char)(96 + (count - Math.abs(lett - 122)));
 				}
 				
+				// Sumamos al contador de vocales si la posicion coincide
 				if (coded[i] == 'a' || coded[i] == 'e' || coded[i] == 'i' || 
 					coded[i] == 'o' || coded[i] == 'u' || coded[i] == 'A' || 
 					coded[i] == 'E' || coded[i] == 'I' || coded[i] == 'O' || 
@@ -59,7 +65,8 @@ public class P102_Encriptacion {
 					vocal++;
 				}
 				
-				s = s + coded[i];
+				// Solo si la frase puede resultar en "FIN" la almacenamos para la comprobacion
+				if (coded.length == 4) s = s + coded[i];
 				
 			}
 			
