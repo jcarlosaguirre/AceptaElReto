@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	short x;
+	string s;
+
+	do {
+
+		cin >> x;
+
+		if (x != 0) {
+
+			s = (x % 2 == 0) ? "DERECHA" : "IZQUIERDA";
+
+			cout << s << endl;
+		}
+
+		else break;
+
+	} while (x != 0);
+
+	return 0;
+}
