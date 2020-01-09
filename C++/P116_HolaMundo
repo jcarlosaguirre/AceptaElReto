@@ -1,0 +1,16 @@
+#include <iostream>
+#include "P116_HolaMundo.h"
+using namespace std;
+
+int main() {
+
+    short x;
+    cin >> x;
+
+    for (short i = 0; i < x; i++){
+
+        cout << "Hola mundo." << endl;
+    }
+
+    return 0;
+}
