@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	short h, c;
+
+	while (true) {
+
+		cin >> h; cin >> c;
+
+		if (h == 0 && c == 0) break;
+
+		if (h % c == 0) cout << (h / c) * 10 << endl;
+
+		else cout << ((h / c) + 1) * 10 << endl;
+
+	}
+
+
+	return 0;
+}
