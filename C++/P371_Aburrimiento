@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	short t;
+
+	while (true) {
+
+		cin >> t;
+
+		if (t == 0) break;
+
+		int c = 0;
+
+		for (short i = 1; i <= t; i++) {
+
+			c += i * 3;
+
+		}
+
+		cout << c << endl;
+
+	}
+
+
+	return 0;
+}
