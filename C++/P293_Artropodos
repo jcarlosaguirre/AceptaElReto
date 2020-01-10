@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int casos, ins, ara, cru, esc, ani;
+	cin >> casos;
+
+	for (int i = 0; i < casos; i++) {
+
+		
+		cin >> ins;
+		cin >> ara;
+		cin >> cru;
+		cin >> esc;
+		cin >> ani;
+
+		cout << (ins * 6) + (ara * 8) + (cru * 10) + ((2 * ani) * esc) << endl;
+
+	}
+
+	
+
+	return 0;
+}
